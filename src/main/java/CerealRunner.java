@@ -7,10 +7,12 @@ import java.io.FileReader;
 public class CerealRunner
 {
     // create a private instance variable to store an ArrayList of Cereal objects
+    private ArrayList<Cereal> list;
 
     public CerealRunner(String fileName)
     {
         // instantiate the ArrayList
+        list = new ArrayList<Cereal>();
 
         try
         {
@@ -22,10 +24,12 @@ public class CerealRunner
 
                 // use the split method to parse the data into an array of
                 //   String objects
+                String[] data = myStr.split(",");
 
                 // go through each String array element and save it
                 //   into the appropriate variable which will be used to
                 //   create a Cereal object
+                list.add(new Cereal(data[0],Integer.parseInt(data[1]),Integer.parseInt(data[2]),Integer.parseInt(data[3]),Double.parseDouble(data[4])));
 
                 // create a new Cereal object, and add it to the ArrayList
 
