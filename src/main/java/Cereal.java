@@ -28,10 +28,10 @@ public class Cereal
     public String getName(){
             return name;
     }
-    public int getFiber(){
+    public double getFiber(){
             return fiber;
     }
-    public double getCalories(){
+    public int getCalories(){
             return calories;
     }
     public double getCarbs(){
