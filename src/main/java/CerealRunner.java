@@ -7,7 +7,7 @@ import java.io.FileReader;
 public class CerealRunner
 {
     // create a private instance variable to store an ArrayList of Cereal objects
-    private ArrayList<Cereal> list;
+    private ArrayList<Cereal> cereals;
 
     public CerealRunner(String fileName)
     {
