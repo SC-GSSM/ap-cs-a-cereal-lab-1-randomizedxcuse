@@ -12,7 +12,7 @@ public class CerealRunner
     public CerealRunner(String fileName)
     {
         // instantiate the ArrayList
-        list = new ArrayList<Cereal>();
+        cereals = new ArrayList<Cereal>();
 
         try
         {
@@ -29,7 +29,7 @@ public class CerealRunner
                 // go through each String array element and save it
                 //   into the appropriate variable which will be used to
                 //   create a Cereal object
-                list.add(new Cereal(data[0],Integer.parseInt(data[1]),Integer.parseInt(data[2]),Integer.parseInt(data[3]),Double.parseDouble(data[4])));
+                cereals.add(new Cereal(data[0],Integer.parseInt(data[1]),Integer.parseInt(data[2]),Integer.parseInt(data[3]),Double.parseDouble(data[4])));
 
                 // create a new Cereal object, and add it to the ArrayList
 
